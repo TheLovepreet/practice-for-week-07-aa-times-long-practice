@@ -1,1 +1,65 @@
-/* Your code here */
+.masthead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "menu_and_search . action_buttons"
+    " . little_tech . "
+    "date logo tpaper";
+}
+.masthead__menu-and-search{
+    grid-area: menu_and_search;
+    display: flex;
+    padding-left: 20px;
+}
+.menu{
+    font-size:11px;
+    padding: 7px 9px;
+}
+.search{
+    font-size:11px;
+    padding: 7px 9px;
+}
+.search:hover{
+    background-color: lightgray;
+}
+.menu:hover{
+    background-color: lightgray;
+}
+.masthead__date{
+    grid-area: date;
+    display: flex;
+    align-items: flex-end;
+}
+.masthead__actions{
+    grid-area: action_buttons;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.masthead__technologies{
+    grid-area: little_tech;
+    display: flex;
+    justify-content: center;
+}
+.masthead__paper{
+    grid-area: tpaper;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.masthead__logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech{
+    text-transform: uppercase;
+    color:darkgray;
+    font-size: 10px;
+}
+.tech>span{
+    margin-right: 3px;
+}
