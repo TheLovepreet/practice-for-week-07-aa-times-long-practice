@@ -1,11 +1,12 @@
 .masthead{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-areas: 
     "menu_and_search . action_buttons"
     " . little_tech . "
     "date logo tpaper";
+    border-bottom: 1px solid lightgray;
 }
 .masthead__menu-and-search{
     grid-area: menu_and_search;
@@ -30,6 +31,8 @@
     grid-area: date;
     display: flex;
     align-items: flex-end;
+    font-size: 11px;
+    border-top: 1px solid lightgray;
 }
 .masthead__actions{
     grid-area: action_buttons;
@@ -40,6 +43,9 @@
 }
 .masthead__technologies{
     grid-area: little_tech;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
     display: flex;
     justify-content: center;
 }
@@ -48,12 +54,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-size: 11px;
+    border-top: 1px solid lightgray;
 }
 .masthead__logo{
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
+    padding: 10px 0px;
 }
 .tech{
     text-transform: uppercase;
