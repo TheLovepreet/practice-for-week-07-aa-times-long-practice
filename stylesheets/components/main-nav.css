@@ -1,1 +1,8 @@
-/* Your code here */
+.masthead__sections>li{
+    font-size: 12px;
+    margin: 0px 5px;
+}
+.masthead__sections{
+    display: flex;
+    justify-content: center;
+}
