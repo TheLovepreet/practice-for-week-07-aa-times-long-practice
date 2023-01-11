@@ -10,7 +10,9 @@
 .interest-links>div{
     height: 130px; 
     width: 250px ;
+    padding-top: 10px;
     margin-right: 25px;
+    border-right:1px solid lightgray;
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

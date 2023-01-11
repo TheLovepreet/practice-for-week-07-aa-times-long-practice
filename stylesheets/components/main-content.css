@@ -1,1 +1,106 @@
-/* Your code here */
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80% 20%;
+    grid-auto-flow: column;
+}
+.Main_news{
+    display: grid;
+    border-right: 1px solid lightgray;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "heading heading"
+    "News-Article Video";
+}
+.Main_Headline{
+    grid-area:heading;
+    font-style: italic;
+    font-weight: bold;
+    align-self: center;
+    margin-top: -20px;
+    font-size: 40px;
+}
+.The_news{
+    grid-area: News-Article;
+    height: 850px;
+    text-align: justify;
+    line-height: 50px;
+}
+.story_headline{
+    font-style: italic;
+    font-weight: bold;
+    line-height: 30px;
+    font-size:30px;
+}
+.By_line{
+    margin-top : 30px;
+    color: darkgray;
+}
+ul{
+    list-style: disc;
+}
+li{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.video{
+    grid-area: Video;
+    justify-self: center;
+}
+footer{
+    color: darkgray;
+}
+.next-news{
+    display: inline-grid;
+    grid-template-columns: repeat(2,auto);
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    border-right: 1px solid lightgray;
+    align-items: center;
+}
+.article{
+    padding: 10px;
+    height: fit-content;
+}
+.article__title{
+    font-size: 25px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.article__byline{
+    text-transform: uppercase;
+    margin: 5px 0px;
+    color: darkgray;
+    padding: 3px;
+}
+.article>p{
+    line-height: 30px;
+}
+/*the sidebar*/
+h3{
+    font-size: 23px;
+    line-height: 24px;
+}
+.sidebar{
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+.sidebar img{
+    height: 85px;
+}
+.sidebar .article{
+    border-bottom: 1px solid lightgray;
+}
+.points{
+    display: grid;
+    border-top: 1px solid lightgray;
+    grid-template-columns: 50% 50%;
+}
+.points p{
+    font-weight: bolder;
+    font-size:15px;
+}
+.points>article{
+    border-bottom: 1px solid lightgray;
+}
